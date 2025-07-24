@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Cart - Ecommerce</title>
+  <link rel="stylesheet" href="order.css" />
+  
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+  <div class="container">
+    <!-- Top Row: Logo + Search + Icons -->
+    <div class="header-top">
+      <div class="logo">BrandName</div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search" />
+        <select>
+          <option>All categories</option>
+          <option>Clothes</option>
+          <option>Phones</option>
+        </select>
+        <button type="submit">🔍</button>
+      </div>
+      <div class="header-icons">
+        <a href="#">🧑 Account</a>
+        <a href="#">🛒 Cart</a>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="header-nav">
+      <a href="#">All Categories</a>
+      <a href="#">Hot Offers</a>
+      <a href="#">Gift Boxes</a>
+      <a href="#">Projects</a>
+      <a href="#">Menu Item</a>
+      <a href="#">Help</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="main">
+    <section class="cart-section container">
+      <h1>My cart (3)</h1>
+      <div class="cart-container">
+        <div class="cart-items">
+          <!-- Item 1 -->
+          <div class="item">
+            <img src="images/11.png" alt="Product" />
+            <div class="item-details">
+              <h3>T-shirts with multiple colors, for men and lady</h3>
+              <p>Size: medium, Color: blue, Material: Plastic</p>
+              <p class="seller">Seller: Artel Market</p>
+              <div class="actions">
+                <button class="remove">Remove</button>
+                <button class="save">Save for later</button>
+              </div>
+            </div>
+            <div class="item-price">$78.99</div>
+            <select class="qty">
+              <option>Qty: 9</option>
+            </select>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="item">
+            <img src="images/44.png" alt="Product" />
+            <div class="item-details">
+              <h3>Blue Cotton Bag, Full Size </h3>
+              <p>Size: Full, Color: blue, Material: Cotton</p>
+              <p class="seller">Seller: Malik Industry</p>
+              <div class="actions">
+                <button class="remove">Remove</button>
+                <button class="save">Save for later</button>
+              </div>
+            </div>
+            <div class="item-price">$50.00</div>
+            <select class="qty">
+              <option>Qty: 4</option>
+            </select>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="item">
+            <img src="images/77.png" alt="Product" />
+            <div class="item-details">
+              <h3>Ronin Headphones- wireless</h3>
+              <p>Size: medium, Color: sky blue, Material: Plastic</p>
+              <p class="seller">Seller: Artel Market</p>
+              <div class="actions">
+                <button class="remove">Remove</button>
+                <button class="save">Save for later</button>
+              </div>
+            </div>
+            <div class="item-price">$170.50</div>
+            <select class="qty">
+              <option>Qty: 1</option>
+            </select>
+          </div>
+
+          <div class="cart-buttons">
+            <button class="back">← Back to shop</button>
+            <button class="remove-all">Remove all</button>
+          </div>
+        </div>
+
+        <!-- Cart summary -->
+        <div class="cart-summary">
+          <div class="coupon">
+            <p>Have a coupon?</p>
+            <input type="text" placeholder="Add coupon" />
+            <button class="apply">Apply</button>
+          </div>
+          <div class="summary">
+            <p>Subtotal: <span>$359.49</span></p>
+            <p>Discount: <span class="discount">- $60.00</span></p>
+            <p>Tax: <span class="tax">$14.00</span></p>
+            <hr />
+            <h3>Total: <span>$313.49</span></h3>
+            <button class="checkout">Checkout</button>
+            <div class="cards">
+              <img src="images/visa.png" />
+              <img src="images/master.png" />
+              <img src="images/apple.jpeg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Saved for later -->
+    <section class="saved container">
+  <h2>Saved for later</h2>
+  <div class="saved-items">
+
+    <div class="saved-card">
+      <img src="images/333.png" />
+      <p>$99.50</p>
+      <p>GoPro HERO6 4K Action Camera - Black</p>
+      <a href="product.html"><button>Move to cart</button></a>
+    </div>
+
+    <div class="saved-card">
+      <img src="images/111.png" />
+      <p>$89.85</p>
+      <p>Iphone 12-mini 64 gb new box pack</p>
+      <a href="product.html"><button>Move to cart</button></a>
+    </div>
+
+    <div class="saved-card">
+      <img src="images/555.png" />
+      <p>$99.50</p>
+      <p>Seveston Watch - Digital</p>
+      <a href="product.html"><button>Move to cart</button></a>
+    </div>
+
+    <div class="saved-card">
+      <img src="images/444.png" />
+      <p>$99.50</p>
+      <p>HP Laptop Core i9 11th Generation</p>
+      <a href="product.html"><button>Move to cart</button></a>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Banner -->
+    <section class="discount-banner">
+      <p>Super discount on more than 100 USD</p>
+      <button>Shop now</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-newsletter">
+  <h4>Subscribe for Newsletter</h4>
+  <p>Get daily updates on new drops & offers</p>
+  <form>
+    <input type="email" placeholder="Enter your email" required />
+    <button type="submit">Subscribe</button>
+  </form>
+</div>
+
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Find Store</a>
+        <a href="#">Categories</a>
+        <a href="#">Blogs</a>
+      </div>
+      <div>
+        <h4>Partnership</h4>
+        <a href="#">About Us</a>
+        <a href="#">Find Store</a>
+        <a href="#">Categories</a>
+        <a href="#">Blogs</a>
+      </div>
+      <div>
+        <h4>Information</h4>
+        <a href="#">Help Center</a>
+        <a href="#">Money Refund</a>
+        <a href="#">Shipping</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div>
+        <h4>For Users</h4>
+        <a href="#">Login</a>
+        <a href="#">Register</a>
+        <a href="#">Settings</a>
+        <a href="#">My Orders</a>
+      </div>
+      <div>
+        <h4>Get App</h4>
+        <img src="images/29.png" alt="App Store" style="width:120px; margin-bottom: 10px;">
+        
+      </div>
+    </div>
+    <p class="footer-bottom">© 2025 BrandName. All rights reserved.</p>
+  </div>
+
+
+</footer>
+
+</body>
+</html>
